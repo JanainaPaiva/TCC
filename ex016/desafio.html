@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Votação</h1>
+    <div> 
+        <img src="imagem1.jpg" alt="">
+        <button onclick="a1()"></button>
+    </div>
+
+    <div>
+        <img src="imagem2.jpg" alt="">
+        <button onclick="a2()"></button>
+    </div>
+
+    <div>
+      <img src="imagem3.jpg" alt="">
+        <button onclick="a3()"></button>
+    </div>
+
+    <div>
+       <img src="imagem4.jpg" alt="">
+        <button onclick="a4()"></button>
+    </div>
+
+
+        <selection id="s1"> <p>resultado A:</p></selection>
+        <selection id="s2"> <p>resultado B:</p></selection>
+        <selection id="s3"> <p>resultado C:</p></selection>
+        <selection id="s4"> <p>resultado D:</p></selection>
+
+
+        <script>
+            let contador1 = 0 
+            let contador2 = 0
+            let contador3 = 0
+            let contador4 = 0
+
+            let vot1 = document.querySelector('selection#s1')
+            let vot2 = document.querySelector('selection#s2')
+            let vot3 = document.querySelector('selection#s3')
+            let vot4 = document.querySelector('selection#s4')
+
+            function a1() {
+                contador1++
+                vot1.innerHTML = `<p>candidatoA <mark>${contador1}
+                    </mark> votos!!!</p>`}
+
+                    function a2() {
+                contador2++
+                vot2.innerHTML = `<p>candidatoB <mark>${contador2}
+                    </mark> votos!!!</p>`}
+
+                    function a3() {
+                contador3++
+                vot3.innerHTML = `<p>candidatoC <mark>${contador3}
+                    </mark> votos!!!</p>`}
+
+                    function a4() {
+                contador4++
+                vot4.innerHTML = `<p>candidatoD <mark>${contador4}
+                    </mark> votos!!!</p>`}
+        </script>
+</body>
+</html>
